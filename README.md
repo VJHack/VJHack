@@ -13,7 +13,7 @@ I believe everyone should be able to run language models on consumer hardware, a
 ### Major Contributions
 
 #### **ggml‑org / llama.cpp**
-- [#11223 – Top‑σ sampler](https://github.com/ggml-org/llama.cpp/pull/11223) | [Paper](https://arxiv.org/pdf/2411.07641v1) – Introduced the Top‑σ sampling algorithm, a novel alternative to Top‑k/Top‑p for LLM decoding, creating a stable sampling space even in high temeratures.
+- [#11223 – Top‑σ sampler](https://github.com/ggml-org/llama.cpp/pull/11223) | [Paper](https://arxiv.org/pdf/2411.07641v1) – Implemented Top‑σ sampling algorithm from the paper Top-nσ: Not All Logits Are You Need, a novel alternative to Top‑k/Top‑p for LLM decoding, creating a stable sampling space even in high temeratures.
 - [#11180](https://github.com/ggml-org/llama.cpp/pull/11180) [#11116](https://github.com/ggml-org/llama.cpp/pull/11116) – Restructures the gguf PyPI package to avoid installing multiple top-level packages and prevent conflicts with existing scripts directory.
 -  – Fixed memory alignment issues in quantized KV-cache allocations, improving stability for int4 models.
 - [#9527](https://github.com/ggml-org/llama.cpp/pull/9527) – Updates `response_format` to match OpenAI's new structured output schema
